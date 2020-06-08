@@ -37,11 +37,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function roles() {
+    /*public function roles() {
         return $this->belongsToMany(Roles::class, 'roles_has_users', 'users_id', 'roles_id')->withTimestamps();
-    }
+    }*/
 
-    public function hasAnyRole($roles)
+   /* public function hasAnyRole($roles)
     {
         if (is_array($roles)) {
             foreach ($roles as $role){
@@ -65,6 +65,6 @@ class User extends Authenticatable
     }
 //
 //    public function apteczkas() {
-//        return $this->belongsToMany(ListaLekow::class, 'apteczka_has_lekis', 'id_user', 'id_apteczki');
-//    }
+//        return $this->belongsToMany(ListaLekow::class, 'apteczka_has_lekis', 'id_user', 'id_apteczki'); 
+  }*/
 }
