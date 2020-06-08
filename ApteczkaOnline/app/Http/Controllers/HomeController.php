@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Page;
 use Illuminate\Http\Request;
+use App\ListaLekow;
+use App\User;
+use App\Apteczka;
 
 class HomeController extends Controller
 {
